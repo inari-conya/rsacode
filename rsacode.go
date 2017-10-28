@@ -7,9 +7,10 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"errors"
-	"inari/l4g"
 	"io/ioutil"
 	"unicode/utf8"
+	
+	"github.com/inari-conya/l4g"
 )
 
 func RsaEncrypt(origData []byte, filename string) ([]byte, error) {
